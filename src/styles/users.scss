@@ -1,0 +1,70 @@
+/* Users CSS Start */
+
+.heading {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > h1 {
+    color: rgb(234, 114, 10);
+  }
+}
+
+#user {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  .user_info {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 247);
+
+    > p {
+      line-height: 25px;
+
+      > span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* Users CSS End */
+
+/* Media Query for upto 1024px screen */
+@media screen and (max-width: 1025px) {
+  #user {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query for upto 768px screen */
+@media screen and (max-width: 769px) {
+  #user {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query for upto 425px screen */
+@media screen and (max-width: 426px) {
+  #user {
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading {
+    > h1 {
+      font-size: 30px;
+    }
+  }
+}
