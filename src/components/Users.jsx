@@ -9,7 +9,7 @@ const Users = ({ users }) => {
         {users.map((user) => (
           <div className="user_info" key={user.login.uuid}>
             {/* User Image */}
-            <img src={user.picture.large} alt="" />
+            <img src={user.picture.large} alt={user.name.first} />
 
             {/* User Name */}
             <p>
